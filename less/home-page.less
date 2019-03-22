@@ -54,7 +54,7 @@
       padding-left: 0;
     }
 
-    @media(max-width: @phone) {
+    @media (max-width: @phone) {
       .flex(@direction: column-reverse;);
     }
   }
@@ -65,6 +65,10 @@
 
     img {
       border-radius: 10px;
+    }
+
+    @media (max-width: @phone) {
+      width: 90%;
     }
   }
 
@@ -77,6 +81,14 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+    }
+
+    @media (max-width: @phone) {
+      .flex(@direction: column);
+
+      .destination {
+        width: 80%;
+      }
     }
   }
 }// home
